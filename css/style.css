@@ -1,0 +1,259 @@
+body{
+    overflow-x: hidden;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.cor-fundo{
+    background-color: rgb(223, 223, 223);
+}
+/*________________________ COMEÇO INDEX _____________________*/
+.logo{
+    width: 150px;
+}
+
+.ret1 {
+        /* Retângulo 1 */
+        position: absolute;
+        width: 1000px;
+        height: 800px;
+        left: 850px;
+        top: -150px;
+        
+        background: #0420BF;
+        border-radius: 177px;
+        transform: rotate(-29.02deg);
+        z-index: -1;
+        overflow: hidden;
+}
+.ret2 {
+    /* Retângulo 2 */
+    position: absolute;
+    width: 800px;
+    height: 700px;
+    left: -50px;
+    top: 900px;
+
+    background: rgba(5, 151, 242, 0.8);
+    border-radius: 110px;
+    transform: rotate(20deg);
+    z-index: -1;
+    overflow: hidden;
+}
+.ret3{
+
+    /* Retângulo 3 */
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    left: 1000px;
+    top: 1600px;
+    
+    /* background: #0420bfda; */
+    background: rgba(39, 66, 255, 0.8);
+    border-radius: 110px;
+    transform: rotate(-70deg);
+    z-index: -1;
+    overflow: hidden;
+
+}
+
+.topo {
+    background-color: white;
+}
+.ajusfigura{
+    --bs-gutter-x: 0 !important;
+
+}
+.ajusRaio {
+    --bs-card-border-radius: 1.5rem !important;
+    --bs-card-inner-border-radius: calc(1.5rem - 1px) !important;
+}
+.ajusInstrutor {
+    background-color: RGBA(13,110,253,var(--bs-bg-opacity,.95))!important;
+    /* background-color: RGBA(160,150,150,var(--bs-bg-opacity,.85))!important; */
+    /* border-color: RGBA(0,30,30,var(--bs-bg-opacity,.7))!important; */
+}
+.ajusTitulo {
+    background-color: rgba(255, 255, 255, 0) !important;
+    font-size: 30px !important;
+    font-weight:bolder !important;
+}
+.btespecial {
+    color: white !important;
+    font-size: 18px !important;
+    font-weight:bolder !important;
+}
+
+
+/*________________________ FIM INDEX _____________________*/
+
+/*__________________ COMEÇO  ________________*/
+
+.textoAlvo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align: left;
+
+}
+
+.textoP{
+    font-size: 20px;
+}
+
+/*__________________ FIM  ________________*/
+
+/*__________________ COMEÇO PG CURSOS  ________________*/
+#motion {
+    background-image: url(../assets/office.jpg);
+    background-size: cover; /*  Ajusta a imagem de fundo ao tamanho do elemento */
+    background-attachment: fixed; /* Cria o efeito paralaxe */
+    height: 70vh;
+    margin-bottom: 70px;
+    /* border-radius: 250px 0px; */
+}
+
+.destaqueTexto {
+    width: 215px;
+    height: 120px;
+    position: absolute; /* Posiciona o texto */
+    top: 65%;
+    left: 15%;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* border-radius: 15px; */
+    /* border-top-left-radius: 20px; */
+    border-top-right-radius: 15px;
+    /* border-bottom-right-radius: 15px; */
+    border-bottom-left-radius: 30px;
+}
+
+
+.destaqueTexto input[type=submit] {
+    border: 0;
+    font-weight: bold;
+    background-color: #0000FF;
+    color: #fff;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+.icone {
+    border-radius: 10px;
+}
+
+/*__________________ FIM  PG CURSOS ________________*/
+
+
+/*________________________ COMEÇO LOGIN _____________________*/
+/* .mainLogin {
+    margin-left: 115px;   
+    margin-top: 40%;
+} */
+
+/* .botaoPrimario{
+    background-color: #D98014;
+    color: white;
+}
+
+.botaoPrimario:hover {
+color: white;
+background-color: #9c5600;
+} */
+
+
+.bg-geral {
+    background-color: #0597F2;
+}
+
+.imagemLogin {
+   
+    background-color: #D9D9D9;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .principalLogin {
+        background-color: #0597F2;       
+    }
+
+    .imagemLogin {
+            display: none;
+    }
+
+
+  
+}
+
+ 
+
+/*________________________ FIM LOGIN _____________________*/
+
+.bodyVideo{
+    overflow-y: hidden;
+ 
+ }
+ 
+ .gridContainer{
+     display: grid;
+     grid-template-columns :300px 1fr;
+     grid-template-rows: 100%;
+   /*   background-color: #0000FF; */
+     
+ }  
+ .barraLateral{
+     width: 300px;
+     height: 91vh;
+     overflow: scroll;
+ }
+ .videoGrid{
+    
+     display: grid;
+     grid-template-columns: repeat(6, 1fr );
+     grid-template-rows: 1fr repeat(6,2fr);
+ }
+ .video{
+     max-width: 100%;
+     grid-column: 2/6;
+     grid-row: 2/5;
+ }
+ 
+ .largura{
+  max-width: 100%;
+ }
+ .ajusImagem{
+    width: 286px;
+    height: 143px;
+    object-fit: cover;
+ }
+
+/*________________________ INICIO FOOTER-ADM _____________________*/
+.tamanhoGenerico{
+    position: absolute;
+    top: 0;
+} 
+.fixFooter {
+    position: sticky;
+    bottom: 0 !important;
+ /*    z-index: 9999; */
+ }
+ tbody{
+    overflow-y: scroll;
+ }
+
+ /*________________________ FIM FOOTER-ADM _____________________*/
+
+
+
+ /*________________________ INDEX PRINCIPAL _____________________*/
+
+ @media screen and (max-width: 600px) {
+    .sem-img {
+        display: none !important;
+    
+        }
+    } 

@@ -1,0 +1,5 @@
+select 
+  instrutores.categoria_id as IDCat, 
+  ctracessos.indicador AS Indicador
+FROM instrutores INNER JOIN ctracessos
+ON instrutores.ctrAcesso_id = ctracessos.id
